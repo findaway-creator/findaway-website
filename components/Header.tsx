@@ -38,7 +38,7 @@ export default function Header({ transparent = false }: HeaderProps) {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center group">
-          <img src="/logo.svg" alt="Find A Way" className="h-8 transition-transform group-hover:scale-105" />
+          <img src="/logos/logo.svg" alt="Find A Way" className="h-8 transition-transform group-hover:scale-105" />
         </Link>
 
         {/* Desktop Nav */}
