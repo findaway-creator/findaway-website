@@ -209,10 +209,12 @@ export default function FindAWayWebsite() {
                 News
               </span>
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="/logos/national-lottery-logo.png"
                   alt="National Lottery Community Fund"
-                  className="h-10 object-contain"
+                  width={100}
+                  height={40}
+                  className="h-10 w-auto object-contain"
                 />
                 <span
                   className="font-body text-sm sm:text-base group-hover:underline"
@@ -471,9 +473,11 @@ export default function FindAWayWebsite() {
                       className="p-1 rounded-full"
                       style={{ backgroundColor: `${colors.sage}30` }}
                     >
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
+                        width={208}
+                        height={208}
                         className="w-48 h-48 md:w-52 md:h-52 rounded-full object-cover shadow-md"
                         style={{ objectPosition: member.imagePosition }}
                       />
@@ -633,10 +637,12 @@ export default function FindAWayWebsite() {
                 Proudly funded by
               </p>
             </div>
-            <img
+            <Image
               src="/logos/national-lottery-logo.png"
               alt="National Lottery Community Fund"
-              className="h-16 object-contain"
+              width={160}
+              height={64}
+              className="h-16 w-auto object-contain"
             />
           </div>
 

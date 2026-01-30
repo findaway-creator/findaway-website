@@ -2,6 +2,7 @@
 
 import { useState, useEffect, startTransition } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { colors } from '@/lib/colors';
 import { navLinks } from '@/lib/navigation';
@@ -38,7 +39,7 @@ export default function Header({ transparent = false }: HeaderProps) {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center group">
-          <img src="/logos/logo.svg" alt="Find A Way" className="h-8 transition-transform group-hover:scale-105" />
+          <Image src="/logos/logo.svg" alt="Find A Way" width={120} height={32} className="h-8 w-auto transition-transform group-hover:scale-105" />
         </Link>
 
         {/* Desktop Nav */}

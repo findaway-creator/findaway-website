@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { colors } from '@/lib/colors';
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
           {/* Logo & tagline */}
           <div className="max-w-xs">
             <div className="mb-4">
-              <img src="/logos/logo.svg" alt="Find A Way" className="h-8" />
+              <Image src="/logos/logo.svg" alt="Find A Way" width={120} height={32} className="h-8 w-auto" />
             </div>
             <p className="font-body text-sm" style={{ color: `${colors.navy}70` }}>
               Helping you navigate the early years.
