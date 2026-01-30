@@ -3,9 +3,9 @@ import InnerPageLayout, { Section, Subsection } from '@/components/InnerPageLayo
 
 export const metadata: Metadata = {
   title: 'Safeguarding Policy',
-  description: 'Find A Way CIC is committed to promoting the welfare, dignity, and safety of all adults and children we engage with. Learn about our safeguarding approach.',
+  description: 'Find A Way is committed to promoting the welfare, dignity, and safety of all adults and children we engage with. Learn about our safeguarding approach.',
   openGraph: {
-    title: 'Safeguarding Policy | Find A Way CIC',
+    title: 'Safeguarding Policy | Find A Way',
     description: 'Our commitment to safeguarding children, young people, and vulnerable adults.',
   },
 };

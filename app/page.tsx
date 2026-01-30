@@ -66,10 +66,10 @@ export default function FindAWayWebsite() {
   const team: TeamMember[] = [
     {
       name: 'Dr Sophia Bentley',
-      role: 'Founding Director & Educational Psychologist',
+      role: 'Educational and Child Psychologist',
       bio: [
-        "I'm Dr Sophia Bentley, Founder and Managing Director of Find A Way CIC.",
-        "As an Educational and Child Psychologist with over 15 years' experience working with local authorities, schools, and communities, I've spent my career helping families navigate the early years. I understand how confusing and overwhelming it can be for parents trying to find the right support. That's why I founded Find A Way CIC: to create a space where families can access practical help, feel heard, and build the confidence to move forward in a way that works for them.",
+        "I'm Dr Sophia Bentley, Founder and Managing Director of Find A Way.",
+        "As an Educational and Child Psychologist with over 15 years' experience working with local authorities, schools, and communities, I've spent my career helping families navigate the early years. I understand how confusing and overwhelming it can be for parents trying to find the right support. That's why I founded Find A Way: to create a space where families can access practical help, feel heard, and build the confidence to move forward in a way that works for them.",
         "As both a professional and a parent, I know that every family's journey is different. My passion is in helping families discover their own path, creating opportunities for children to thrive, and building stronger, more connected communities where no one feels like they're doing it alone.",
       ],
       image: '/images/team/sophia.png',

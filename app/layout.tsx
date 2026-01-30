@@ -17,22 +17,22 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Find A Way CIC | Family Psychology Services in Yorkshire',
-    template: '%s | Find A Way CIC',
+    default: 'Find A Way | Family Psychology Services in Yorkshire',
+    template: '%s | Find A Way',
   },
   description: 'Supporting families through early years challenges with expert psychological services. Video Interaction Guidance, consultations, and training across Yorkshire.',
   metadataBase: new URL('https://findaway.org'),
   openGraph: {
-    title: 'Find A Way CIC | Family Psychology Services',
+    title: 'Find A Way | Family Psychology Services',
     description: 'Supporting families through early years challenges with expert psychological services.',
     url: 'https://findaway.org',
-    siteName: 'Find A Way CIC',
+    siteName: 'Find A Way',
     locale: 'en_GB',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Find A Way CIC | Family Psychology Services',
+    title: 'Find A Way | Family Psychology Services',
     description: 'Supporting families through early years challenges with expert psychological services.',
   },
   icons: {

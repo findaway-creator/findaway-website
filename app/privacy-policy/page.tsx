@@ -3,9 +3,9 @@ import InnerPageLayout, { Section } from '@/components/InnerPageLayout';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Learn how Find A Way CIC collects, uses, and protects your personal data under the Data Protection Act 2018 and UK GDPR.',
+  description: 'Learn how Find A Way collects, uses, and protects your personal data under the Data Protection Act 2018 and UK GDPR.',
   openGraph: {
-    title: 'Privacy Policy | Find A Way CIC',
+    title: 'Privacy Policy | Find A Way',
     description: 'Understand how we use your data and your rights under UK data protection law.',
   },
 };

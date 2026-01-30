@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Video Interaction Guidance (VIG)',
   description: 'Video Interaction Guidance is a gentle, strengths-based approach that supports parents and carers to build more positive, connected relationships with their children.',
   openGraph: {
-    title: 'Video Interaction Guidance (VIG) | Find A Way CIC',
+    title: 'Video Interaction Guidance (VIG) | Find A Way',
     description: 'A relational tool for strengthening parent-child connection through video feedback.',
   },
 };
