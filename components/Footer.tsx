@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between gap-12 mb-16">
           {/* Logo & tagline */}
           <div className="max-w-xs">
-            <div className="mb-4">
+            <Link href="/" className="block mb-4">
               <Image src="/logos/logo.svg" alt="Find A Way" width={120} height={32} className="h-8 w-auto" />
-            </div>
+            </Link>
             <p className="font-body text-lg leading-relaxed" style={{ color: `${colors.navy}90` }}>
               Helping you navigate the early years.
             </p>
