@@ -124,8 +124,8 @@ export default function FindAWayWebsite() {
 
       {/* Hero Section - h-screen keeps news banner visible */}
       <section className="h-screen flex flex-col">
-        {/* Main hero content - flex-1 fills space, flex-col justify-center vertically centers, pt-8 offsets for nav */}
-        <div className="flex-1 flex flex-col justify-center pt-8">
+        {/* Main hero content - flex-1 fills space, flex-col justify-center vertically centers, pt offsets for nav */}
+        <div className="flex-1 flex flex-col justify-center pt-20 md:pt-8">
           <div className="max-w-6xl mx-auto px-6 w-full">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="fade-up">
