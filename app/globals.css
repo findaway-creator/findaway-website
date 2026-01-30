@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system colors - keep in sync with app/lib/colors.ts */
+:root {
+  --color-cream: #FDF8F3;
+  --color-warm-white: #FEFCFA;
+  --color-coral: #D27056;
+  --color-coral-dark: #B85A42;
+  --color-sage: #81B29A;
+  --color-navy: #3D405B;
+  --color-gold: #F2CC8F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fonts loaded via next/font in layout.tsx */
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus visible styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.nav-link:hover {
+  color: var(--color-coral) !important;
+}
+
+.footer-link:hover {
+  color: var(--color-navy) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-coral-dark) !important;
+}
+
+.blob {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: blob 8s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(61, 64, 91, 0.15);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #D27056 0%, #3D405B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pattern-dots {
+  background-image: radial-gradient(rgba(210, 112, 86, 0.125) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.team-image {
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+/* Hero image seamless fade into background */
+.hero-image-container {
+  /* Remove vignette edge - use very large, soft mask */
+  -webkit-mask-image: radial-gradient(
+    ellipse 100% 100% at center 45%,
+    black 60%,
+    rgba(0,0,0,0.5) 80%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 100% 100% at center 45%,
+    black 60%,
+    rgba(0,0,0,0.5) 80%,
+    transparent 100%
+  );
+}
+
+/* Gradient overlay for directional fades and horizon */
+.hero-image-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    /* Left fade - soft */
+    linear-gradient(to right, #FDF8F3 0%, transparent 8%),
+    /* Right fade - soft */
+    linear-gradient(to left, #FDF8F3 0%, transparent 8%),
+    /* Top fade - extended upward for cloud glow blend */
+    linear-gradient(to bottom, #FDF8F3 0%, rgba(253,248,243,0.6) 8%, transparent 25%),
+    /* Subtle horizon band - slightly darker cream */
+    linear-gradient(to bottom, transparent 42%, rgba(235,225,215,0.15) 48%, rgba(235,225,215,0.08) 52%, transparent 58%),
+    /* Bottom fade - reduced to preserve foreground stone */
+    linear-gradient(to top, #FDF8F3 0%, transparent 12%);
+  border-radius: inherit;
+}
+
+/* Responsive adjustments for hero image fades */
+@media (max-width: 768px) {
+  .hero-image-container {
+    -webkit-mask-image: radial-gradient(
+      ellipse 100% 100% at center 45%,
+      black 55%,
+      rgba(0,0,0,0.5) 75%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 100% 100% at center 45%,
+      black 55%,
+      rgba(0,0,0,0.5) 75%,
+      transparent 100%
+    );
+  }
+
+  .hero-image-fade {
+    background:
+      linear-gradient(to right, #FDF8F3 0%, transparent 6%),
+      linear-gradient(to left, #FDF8F3 0%, transparent 6%),
+      linear-gradient(to bottom, #FDF8F3 0%, rgba(253,248,243,0.5) 6%, transparent 20%),
+      linear-gradient(to bottom, transparent 40%, rgba(235,225,215,0.12) 46%, rgba(235,225,215,0.06) 52%, transparent 58%),
+      linear-gradient(to top, #FDF8F3 0%, transparent 10%);
+  }
+}
+
+/* Wide screen: allow illustration to breathe horizontally */
+@media (min-width: 1536px) {
+  .hero-image-container {
+    -webkit-mask-image: radial-gradient(
+      ellipse 95% 100% at center 45%,
+      black 55%,
+      rgba(0,0,0,0.6) 75%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 95% 100% at center 45%,
+      black 55%,
+      rgba(0,0,0,0.6) 75%,
+      transparent 100%
+    );
+  }
+}
+
+/* Inner page content typography - optimised for reading */
+.inner-page-content {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.7;
+  color: rgba(61, 64, 91, 0.87); /* navy at 87% opacity */
+}
+
+.inner-page-content p {
+  margin-bottom: 1rem;
+}
+
+.inner-page-content p:last-child {
+  margin-bottom: 0;
+}
+
+.inner-page-content ul,
+.inner-page-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.inner-page-content ul {
+  list-style-type: disc;
+}
+
+.inner-page-content ol {
+  list-style-type: decimal;
+}
+
+.inner-page-content li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.inner-page-content li:last-child {
+  margin-bottom: 0;
+}
+
+.inner-page-content a {
+  color: var(--color-coral);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.2s;
+}
+
+.inner-page-content a:hover {
+  opacity: 0.7;
+}
+
+/* Nested list styling */
+.inner-page-content li > ul,
+.inner-page-content li > ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Section content inherits but can override */
+.section-content {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* TOC button hover - CSS instead of JS for performance */
+.toc-button-hover:hover {
+  background-color: rgba(61, 64, 91, 0.06); /* navy at 6% opacity */
+}
