@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mb-4">
               <Image src="/logos/logo.svg" alt="Find A Way" width={120} height={32} className="h-8 w-auto" />
             </div>
-            <p className="font-body text-sm" style={{ color: `${colors.navy}70` }}>
+            <p className="font-body text-lg leading-relaxed" style={{ color: `${colors.navy}90` }}>
               Helping you navigate the early years.
             </p>
           </div>

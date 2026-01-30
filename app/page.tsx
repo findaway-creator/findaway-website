@@ -122,12 +122,12 @@ export default function FindAWayWebsite() {
     <div className="min-h-screen font-body" style={{ backgroundColor: colors.cream }}>
       <Header transparent />
 
-      {/* Hero Section - h-screen keeps news banner visible */}
-      <section className="h-screen flex flex-col">
+      {/* Hero Section */}
+      <section className="min-h-screen md:h-screen flex flex-col">
         {/* Main hero content - flex-1 fills space, flex-col justify-center vertically centers, pt offsets for nav */}
-        <div className="flex-1 flex flex-col justify-center pt-20 md:pt-8">
-          <div className="max-w-6xl mx-auto px-6 w-full">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex-1 flex flex-col justify-center pt-24 md:pt-8">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 w-full">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-12 items-center">
               <div className="fade-up">
                 <div
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
@@ -153,7 +153,7 @@ export default function FindAWayWebsite() {
                   tailored interventions, and community-based care—helping every family thrive.
                 </p>
 
-                <div className="flex flex-wrap items-center gap-6">
+                <div className="flex flex-wrap items-center gap-6 relative z-10 mb-4 md:mb-0">
                   <a
                     href="#contact"
                     className="btn-primary inline-flex items-center gap-2 px-7 py-4 rounded-full font-body font-medium text-white transition-all hover:scale-105 hover:shadow-xl"
@@ -172,8 +172,8 @@ export default function FindAWayWebsite() {
               </div>
 
               {/* Hero illustration with seamless fade - shifted left for better text connection */}
-              <div className="relative fade-up flex items-center justify-center md:-ml-[6%]" style={{ animationDelay: '0.2s' }}>
-                <div className="hero-image-container relative w-96 h-96 md:w-[540px] md:h-[540px] lg:w-[600px] lg:h-[600px] xl:w-[660px] xl:h-[660px]">
+              <div className="relative fade-up flex items-center justify-center md:mt-0 md:-ml-[6%]" style={{ animationDelay: '0.2s' }}>
+                <div className="hero-image-container relative w-screen h-72 -ml-4 md:ml-0 md:w-[540px] md:h-[540px] lg:w-[600px] lg:h-[600px] xl:w-[660px] xl:h-[660px]">
                   <Image
                     src="/images/hero-stepping-stones.png"
                     alt="Stepping stones leading toward the horizon"
@@ -197,7 +197,7 @@ export default function FindAWayWebsite() {
             borderTop: `1px solid ${colors.sage}15`
           }}
         >
-          <div className="max-w-6xl mx-auto px-6 py-5">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 py-5">
             <a
               href="#funding"
               className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 group cursor-pointer"
@@ -230,8 +230,8 @@ export default function FindAWayWebsite() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 relative">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="about" className="py-16 md:py-24 relative">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <div
@@ -332,7 +332,7 @@ export default function FindAWayWebsite() {
 
       {/* Services Section */}
       <section id="services" className="py-24" style={{ backgroundColor: colors.warmWhite }}>
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
@@ -431,7 +431,7 @@ export default function FindAWayWebsite() {
 
       {/* Team Section */}
       <section id="team" className="py-24" style={{ backgroundColor: colors.cream }}>
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           {/* Centered Header */}
           <div className="text-center mb-16">
             <div
@@ -520,7 +520,7 @@ export default function FindAWayWebsite() {
 
       {/* Private Practice Section */}
       <section id="private-practice" className="py-24" style={{ backgroundColor: colors.warmWhite }}>
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <div
@@ -666,7 +666,7 @@ export default function FindAWayWebsite() {
 
       {/* Contact Section */}
       <section id="contact" className="py-24" style={{ backgroundColor: colors.navy }}>
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <div
